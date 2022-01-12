@@ -1,0 +1,81 @@
+Dobro dosli u MojNovcanik aplikaciju za vodjenje i upravljanje bankovnim racunom!
+
+Opis:
+Program omogucava logovanje i registraciju korisnika, nakon logovanja u aplikacuju
+omogucava da napravimo i ukinemo racun, da dobijemo stanje na racunu, dodamo i skinemo novac sa racuna
+promenimo valutu racuna, placamo racune i vrsimo pretragu transakcija
+
+Funkcionalost:
+
+ Prvi meni:
+-Kreiranje korisnika (Sign Up) - kreira se username i password za logovanje, vrsi se provera da li username vec postoji
+-Prijava korisnika (Login) - koristeci pravilan username i password - baca gresku za pogresan unos
+-Izlaz - koristimo ga za napustanje MojNovcanik aplikacije
+
+ (za nepravilan unos username se podrazumeva iskljucivo pogresno unesen String)
+ (za nepravilno unesen password se takodje podrazumeva pogresno unesen String)
+
+ Drugi meni (Nakon uspesnog logovanja u aplikaciju dostupne su sledece funkcionalnosti):
+
+ 1) Napravi racun
+ 2) Ukini racun
+ 3) Ispisi racun
+ 4) Dodaj ili skini novac sa racuna
+ 5) Promeni valutu racuna
+ 6) Placanje
+ 7) Pretraga transakcija
+ 8) Povratak na Login meni
+
+ Napravi racun - funkcija omogucava unos za brojRacuna koji mora biti tipa Integer.
+ U slucaju da vec postoji racun sa unetim brojem izbacice gresu i nece napraviti racun
+
+ Ukini racun - za uneti brojRacuna proverava da li postoji i brise ga.
+ U slucaju da ne postoji racun sa brojRacuna obavestava korisnika o tome!
+
+ Ispisi racun - omogucava uvid u stanje i valutu racuna tako sto unesemo brojRacuna
+ Ako unesemo pogresan brojRacuna ispisace da ne postoji
+
+ Dodaj ili skini novac sa racuna - funkcija kada se pozove trazi da se unese brojRacuna.
+ Zatim otvara novi podmeni sa opcijama:
+
+ 1) Dodavanje na racun
+ 2) Skidanje sa racuna
+ 3) Povratak na prethodni meni
+
+ (Ukoliko je unet pogresan brojRacuna ispisace gresku)
+
+ Dodavanje na racun - omogucava korisniku da doda sumu novca na vec postojece stanje na racunu
+ Skidanje sa racuna - omogucava korisniku da skine odredjeni iznos sa racuna
+ Povratak na prethodni meni - omogucava da se vratimo na prethodne opcije
+
+Napomena: Pretpostavlja se da se dodavanje i skidanje sa racuna vrsi u istoj valuti koja se trenutno koristi na racunu!
+Takodje, pocetna valuta za svaki racun je uvek u RSD, u slucaju da pokusamo menjati istu valutu ispisace gresku!
+
+Promeni valutu racuna - funkcija sluzi da odabirom jedne od cetiri ponudjene valute (EUR, USD, BAM, RSD) kao opcije
+izvrsimo promenu valute racuna, potrebno je uneti neku od ponudjenih opcija tipa integera (1,2,3,4)
+
+Placanje - funkcija koja omogucava placanje sa racuna, prvo se unese brojRacuna (ispisace gresu ako nije validan broj)
+Zatim se unosi trosak placanja koji mora biti unet sa - kao predznakom npr. -300 ili -800, -1200 itd. U suprotnom bacice gresku.
+Kada smo uneli trosak pojavljuje se izbor za kategoriju troska sa opcijama:
+
+1) Racun
+2) Zabava
+3) Hrana
+4) Odeca
+5) Infostan
+6) Elektroprivreda
+7) BusPlus dopuna
+
+Hint: (kao default vrednost za transakcije podesena je Ostalo)
+
+Napravljena je provera za manji unos od 1 i za veci od 7, izbaci gresku
+Zatim ide unos opisa troska, koji nam omogucava da imamo bolji uvid u troskove (ocekuje se da bude nesto konkretno)
+
+Pretraga transakcija - funkcija omogucava da za svaki brojRacuna, korisnik moze na osnovu kategorije da ima uvid u troskove
+Unese se brojRacuna i izabere kategorija, ispisuje broj racuna, kategoriju, opis i iznos transakcije
+
+Povratak na Login meni - omogucava da mozemo da se vratimo u prethodni meni
+
+
+
+
