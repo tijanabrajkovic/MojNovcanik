@@ -7,7 +7,7 @@ public class meniPreIPosleLogovanja {
         System.out.println("~~~~~           Dobro dosli u MojRacun CLI banku           ~~~~~");
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println();
-        System.out.println("Izaberite jednu od dve ponudjene opcije:");
+        System.out.println("Izaberite jednu od tri ponudjene opcije:");
         System.out.println();
         System.out.println("1) Sign up");
         System.out.println("2) Login");
